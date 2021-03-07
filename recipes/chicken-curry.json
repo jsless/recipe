@@ -1,0 +1,35 @@
+{
+  "name": "Chicken Curry",
+  "tags": ["curry", "easy", "meat"],
+  "description": "A mild and creamy chicken curry. Very easy to make",
+  "preface": "If you use chicken thighs, it is a good idea to precook them for an hour in a deep dish with water, salt and pepper",
+  "serves": 2,
+  "equipment": [
+    "teaspoon",
+    "tablespoon",
+    "wok",
+    "large spoon",
+    "knife"
+  ],
+  "ingredients": {
+    "oil": "1 tbsp",
+    "onion": "1",
+    "garlic clove": "3",
+    "potato": "1",
+    "chicken breast": "2",
+    "flour": "2 tsp",
+    "water": "150 ml",
+    "curry paste": "1 tbsp",
+    "chicken stock cube": "1",
+    "natural yogurt": "100 ml"
+  },
+  "instructions": [
+    "Prepare the ingredients by finely chopping the garlic, cutting the potato into small cubes and slicing the onion",
+    "Heat the oil in a wok and fry the onion, garlic and potato",
+    "Cut the chicken breast into pieces and add to the wok. Cook until the chicken is no longer pink on the outside",
+    "Stir in the flour. Add the water, curry paste and crumble in the stock cube and stir well",
+    "Bring to boil, then simmer for around 10 minutes (until all the vegetables and chicken are cooked)",
+    "Reduce the heat and mix in the yogurt. Heat for another minute but don't boil it",
+    "Serve with rice"
+  ]
+}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% set title = "Results" %}
+
+{% block content %}
+    <h1>
+        Search Results
+    </h1>
+
+    {% for result in results %}
+    <div>
+        <h3>{{ result.name }}</h3>
+        <p>{{ result.description }}</p>
+        {% if ingredient_search %}
+            {% set delta = ingredient_delta(result.ingredients(), ingredients) %}
+            <p>
+                <span class="uses">Uses: {{ delta[0] }}</span> |
+                <span class="doesnt-use">Doesn't use: {{ delta[1] }}</span> |
+                <span class="extra">Extras: {{ delta[2] }}</span>
+            </p>
+        {% endif %}
+        <a href="{{ url_for('recipe', name=result.filename) }}">Recipe</a>
+    </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,11 @@
+span.uses {
+    color: #0dd900;
+}
+
+span.doesnt-use {
+    color: #ffa401;
+}
+
+span.extra {
+    color: #ff0f00;
+}

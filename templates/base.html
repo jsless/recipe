@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <title>JSLess Recipes | {{ title }}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='core.css') }}">
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+    <hr>
+
+    <a href="{{ url_for('index') }}">Home</a> |
+    <a href="{{ url_for('add_recipe') }}">Add Recipe</a> |
+    <a href="mailto:jude@jellywx.com">Contact Me</a> |
+    <a href="https://github.com/jsless/recipe">Source Code</a>
+
+{% if config.XMR_ADDR != None %}
+    <p>
+        XMR: {{ config.XMR_ADDR }}
+    </p>
+{% endif %}
+
+</body>
+</html>

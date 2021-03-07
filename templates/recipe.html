@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>
+        {{ recipe.name }}
+    </h1>
+
+    <p>
+        {{ recipe.preface }}
+    </p>
+
+    <h2>You will need:</h2>
+
+    <h3>Ingredients</h3>
+
+    <table>
+        {% for ingredient, quantity in recipe.ingredients.items() %}
+        <tr>
+            <td>{{ ingredient }}</td>
+            <td>{{ quantity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>Servings: {{ recipe.serves }}</p>
+
+    <h3>Equipment</h3>
+
+    <ul>
+        {% for equipment in recipe.equipment %}
+        <li>{{ equipment }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Steps:</h2>
+
+    <ol>
+        {% for step in recipe.instructions %}
+        <li>{{ step }}</li>
+        {% endfor %}
+    </ol>
+
+{% endblock %}
